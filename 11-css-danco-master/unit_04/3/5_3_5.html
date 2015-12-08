@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Наследование в CSS 
+	</title>
+	<style type="text/css">
+	body {
+    	font: 14px 'Verdana';
+    	color: green;
+    	margin: 0;
+    	padding: 0;
+	}
+	div{
+	color: red;
+	}
+	.center-text {
+    width: 80%;
+    height: auto;
+    font-size: 1.4em;
+    text-align: left;
+    background-color: #fafafa;
+    border: solid 1px lightgray;
+	}
+p{
+color:red !important;
+}
+p{
+color:blue;
+}
+#first {color: red;}
+.blue {color: blue;}
+
+	</style>
+</head>
+
+<div class="center-text">
+
+<h2>Наследование в CSS</h2>
+<pre>
+body {
+    	font: 14px 'Verdana';
+    	color: green;
+    	margin: 0;
+    	padding: 0;
+	}
+div{
+color: red;
+}
+
+#first {color: red;}
+.blue {color: blue;}
+
+</pre>
+
+</div> 
+<span>И здесь пишем любой интересующий нас текст.</span>
+<p>!important - это свойство всегда и везде будет иметь наивысший приоритет</p>
+<div id="first" class="blue">Свойства, указанные для класса (class) или уникального идентификатора (id), имеют высший приоритет, причём приоритет у id, выше чем у class. Всё об этих селекторах и о понятии селектора в целом вы узнаете в следующей статье. </div>
+
+<div class="blue"><h2>Как обратиться к классу или id в файле стилей (CSS)?</h2>
+<pre>
+#first {color: red;} /* обращаемся к id с именем first */
+.second {color: blue;} /* обращаемся к классу с именем second */
+#first .second {color: orange;} /* обращаемся к классу с именем second, ТОЛЬКО если он находится ВНУТРИ тега с идентификатором first */
+.first .third {color: grey;} /* обращаемся к классу с именем third, ТОЛЬКО если он находится ВНУТРИ тега с классом first */
+</pre>
+</div>
+</body>
+</html>

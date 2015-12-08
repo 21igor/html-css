@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>We are Elegance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+ 
+
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body>
+<style type="text/css">
+
+
+
+</style>
+<!--div id='wrapper'-->
+<!--///////////////////////////////////////////////////////
+       // Navigation section 
+////////////////////////////////////////////////////////-->
+  <div class="fix-header" id="home">
+    <div class="w-container">
+      <div class="w-nav" data-collapse="medium" data-animation="default" data-duration="400"></div>
+    </div>
+  </div>
+  <div class="fixed-header">
+    <div class="w-container container">
+      <div class="w-row">
+
+       <!--///////////////////////////////////////////////////////
+       // Logo section 
+       //////////////////////////////////////////////////////////-->
+
+
+        <div class="w-col w-col-3 logo">
+          <a href="#"><img class="logo" src="images/logo.png" alt="Elegance"></a>
+        </div>
+
+        <!--///////////////////////////////////////////////////////
+       // End Logo section 
+       //////////////////////////////////////////////////////////-->
+
+        <div class="w-col w-col-9">
+
+       <!--///////////////////////////////////////////////////////
+       // Menu section 
+       //////////////////////////////////////////////////////////-->
+
+
+          <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+            <div class="w-container nav">
+              <nav class="w-nav-menu nav-menu" role="navigation">
+
+                <a class="w-nav-link menu-li" href="#home">HOME</a>
+                <a class="w-nav-link menu-li" href="#about">ABOUT</a>
+                <a class="w-nav-link menu-li" href="#service">SERVICES</a>
+                <a class="w-nav-link menu-li" href="#portfolio">PORTFOLIO</a>
+                <a class="w-nav-link menu-li"href="#team">TEAM</a>
+                <a class="w-nav-link menu-li" href="#contact">CONTACT</a>
+              </nav>
+              <div class="w-nav-button">
+                <div class="w-icon-nav-menu"></div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--///////////////////////////////////////////////////////
+       // End Menu section 
+       //////////////////////////////////////////////////////////-->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<style type="text/css">
+/* slider */
+
+.sp-slideshow {
+    position: relative;
+    
+    margin: 0px auto;
+    
+    width: 100%;
+    max-width: 1000px;
+    
+    min-width: 100%;
+    
+    height: 590px;
+    
+    
+}
+
+.sp-content {
+    background: url(images/slider/back.png) no-repeat scroll 0 0;
+    
+    position: relative;
+    width: 100%;
+    
+    /* background-size: cover; */
+    height: 100%;
+    overflow: hidden;
+    background-position: center left;
+}
+
+.sp-parallax-bg {
+    
+    background: url(images/slider/cloud.png) repeat-x scroll 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(12, 19, 29, 0.94);
+    overflow: hidden;
+}
+
+
+
+.sp-slideshow input {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    width: 9px;
+    height: 9px;
+    z-index: 1001;
+    cursor: pointer;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.sp-slideshow input + label {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    display: block;
+    z-index: 1000;
+    border: 3px solid #fff;
+    border: 3px solid rgba(255,255,255,0.9);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background-color linear 0.1s;
+    -moz-transition: background-color linear 0.1s;
+    -o-transition: background-color linear 0.1s;
+    -ms-transition: background-color linear 0.1s;
+    transition: background-color linear 0.1s;
+}
+
+.sp-slideshow input:checked + label {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.sp-selector-1, .button-label-1 {
+    margin-left: -36px;
+}
+
+.sp-selector-2, .button-label-2 {
+    margin-left: -18px;
+}
+
+.sp-selector-4, .button-label-4 {
+    margin-left: 18px;
+}
+
+.sp-selector-5, .button-label-5 {
+    margin-left: 36px;
+}
+
+.sp-arrow {
+    position: absolute;
+    top: 50%;
+    width: 28px;
+    height: 38px;
+    margin-top: -19px;
+    display: none;
+
+    opacity: 0.8;
+    cursor: pointer;
+    z-index: 1000;
+    background: transparent url(images/slider/arrows.png) no-repeat;
+    -webkit-transition: opacity linear 0.3s;
+    -moz-transition: opacity linear 0.3s;
+    -o-transition: opacity linear 0.3s;
+    -ms-transition: opacity linear 0.3s;
+    transition: opacity linear 0.3s;
+}
+
+.sp-arrow:hover{
+    opacity: 1;
+}
+.sp-arrow:active{
+    margin-top: -18px;
+}
+
+.sp-selector-1:checked ~ .sp-arrow.sp-a2,
+.sp-selector-2:checked ~ .sp-arrow.sp-a3,
+.sp-selector-3:checked ~ .sp-arrow.sp-a4,
+.sp-selector-4:checked ~ .sp-arrow.sp-a5 {
+    right: 15px;
+    display: block;
+    background-position: top right;
+}
+.sp-selector-2:checked ~ .sp-arrow.sp-a1,
+.sp-selector-3:checked ~ .sp-arrow.sp-a2,
+.sp-selector-4:checked ~ .sp-arrow.sp-a3,
+.sp-selector-5:checked ~ .sp-arrow.sp-a4 {
+    left: 15px;
+    display: block;
+    background-position: top left;
+}
+.sp-slideshow input:checked ~ .sp-content {
+    -webkit-transition: background-position linear 0.6s, background-color linear 0.8s;
+    -moz-transition: background-position linear 0.6s, background-color linear 0.8s;
+    -o-transition: background-position linear 0.6s, background-color linear 0.8s;
+    -ms-transition: background-position linear 0.6s, background-color linear 0.8s;
+    transition: background-position linear 0.6s, background-color linear 0.8s;
+}
+
+.sp-slideshow input:checked ~ .sp-content .sp-parallax-bg {
+    -webkit-transition: background-position linear 0.7s;
+    -moz-transition: background-position linear 0.7s;
+    -o-transition: background-position linear 0.7s;
+    -ms-transition: background-position linear 0.7s;
+    transition: background-position linear 0.7s;
+}
+
+input.sp-selector-1:checked ~ .sp-content {
+    background-position: 0 0;
+    background-color: #727b7f;
+}
+
+input.sp-selector-2:checked ~ .sp-content {
+    background-position: -100px 0;
+    background-color: #7f7276;
+}
+
+input.sp-selector-3:checked ~ .sp-content {
+    background-position: -200px 0;
+    background-color: #737f72;
+}
+
+input.sp-selector-4:checked ~ .sp-content {
+    background-position: -300px 0;
+    background-color: #79727f;
+}
+
+input.sp-selector-5:checked ~ .sp-content {
+    background-position: -400px 0;
+    background-color: #7d7f72;
+}
+
+.sp-slider {
+    position: relative;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: left ease-in 0.8s;
+    -moz-transition: left ease-in 0.8s;
+    -o-transition: left ease-in 0.8s;
+    -ms-transition: left ease-in 0.8s;
+    transition: left ease-in 0.8s; 
+}
+
+.sp-slider > li {
+    color: #fff;
+    width: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0 60px;
+    float: left;
+    text-align: center;
+    opacity: 0.4;
+    -webkit-transition: opacity ease-in 0.4s 0.8s;
+    -moz-transition: opacity ease-in 0.4s 0.8s;
+    -o-transition: opacity ease-in 0.4s 0.8s;
+    -ms-transition: opacity ease-in 0.4s 0.8s;
+    transition: opacity ease-in 0.4s 0.8s; 
+}
+.sp-slider > li img{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    padding: 40px 0 50px 0;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+input.sp-selector-1:checked ~ .sp-content .sp-parallax-bg {
+    background-position: 0 0;
+}
+
+input.sp-selector-2:checked ~ .sp-content .sp-parallax-bg {
+    background-position: -200px 0;
+}
+
+input.sp-selector-3:checked ~ .sp-content .sp-parallax-bg {
+    background-position: -400px 0;
+}
+
+input.sp-selector-4:checked ~ .sp-content .sp-parallax-bg {
+    background-position: -600px 0;
+}
+
+input.sp-selector-5:checked ~ .sp-content .sp-parallax-bg {
+    background-position: -800px 0;
+}
+
+input.sp-selector-1:checked ~ .sp-content .sp-slider {
+    left: 0;
+}
+
+input.sp-selector-2:checked ~ .sp-content .sp-slider {
+    left: -100%;
+}
+
+input.sp-selector-3:checked ~ .sp-content .sp-slider {
+    left: -200%;
+}
+
+input.sp-selector-4:checked ~ .sp-content .sp-slider {
+    left: -300%;
+}
+
+input.sp-selector-5:checked ~ .sp-content .sp-slider {
+    left: -400%;
+}
+
+input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
+input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2),
+input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3),
+input.sp-selector-4:checked ~ .sp-content .sp-slider > li:nth-child(4),
+input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
+    opacity: 1;
+}
+.slidersection {
+  display: block;
+  padding-top: 80px;
+  background: rgba(255, 255, 255, 0);
+}
+
+@media screen and (max-width: 840px){
+    .sp-slideshow { height: 345px; }
+}
+@media screen and (max-width: 680px){
+    .sp-slideshow { height: 285px; }
+}
+@media screen and (max-width: 560px){
+    .sp-slideshow { height: 235px; }
+}
+@media screen and (max-width: 320px){
+    .sp-slideshow { height: 158px; }
+}
+</style>
+
+  <!--///////////////////////////////////////////////////////
+       //  Slider section 
+ //////////////////////////////////////////////////////////-->
+
+
+  <div class="slidersection">
+    <div class="sp-slideshow">
+       <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+        <label for="button-1" class="button-label-1"></label>
+        
+        <input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+        <label for="button-2" class="button-label-2"></label>
+        
+        <input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
+        <label for="button-3" class="button-label-3"></label>
+        
+        <input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
+        <label for="button-4" class="button-label-4"></label>
+        
+        <input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
+        <label for="button-5" class="button-label-5"></label>
+        
+        <label for="button-1" class="sp-arrow sp-a1"></label>
+        <label for="button-2" class="sp-arrow sp-a2"></label>
+        <label for="button-3" class="sp-arrow sp-a3"></label>
+        <label for="button-4" class="sp-arrow sp-a4"></label>
+        <label for="button-5" class="sp-arrow sp-a5"></label>
+        <div class="sp-content">
+          <div class="sp-parallax-bg"></div>
+          <ul class="sp-slider clearfix">
+            <li><img src="images/slider/slider1.png" alt="image01" /></li>
+            <li><img src="images/slider/slider2.png" alt="image02" /></li>
+            <li><img src="images/slider/slider3.png" alt="image03" /></li>
+            <li><img src="images/slider/slider4.png" alt="image04" /></li>
+            <li><img src="images/slider/slider5.png" alt="image05" /></li>
+          </ul>
+        </div><!-- sp-content -->
+        
+      </div><!-- sp-slideshow -->
+  </div>
+
+
+<!--///////////////////////////////////////////////////////
+       // End slider section 
+//////////////////////////////////////////////////////////-->
+
+
+
+
+  <script src="js/modernizr.js"></script>
+</body>
+</html>

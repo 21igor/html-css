@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Filter Demo</title>
+	<style type="text/css" media="screen">
+		html {
+			height: 100%;
+			background-color: #eaeaea;
+			font-family: Arial;
+		}
+		em {
+			font-size: 10pt;
+		}
+		div {
+			width: 510px;
+			margin: 10px auto;
+		}
+		img {
+			border: 5px solid #fff;
+		}
+		img {  
+  			-webkit-transition: -webkit-filter 1s;  
+		}
+		div:nth-child(1) img {
+			 -webkit-filter: grayscale(100%);
+		}
+		div:nth-child(2) img {
+			-webkit-filter: sepia(100%);  
+		}
+		div:nth-child(3) img {
+			-webkit-filter: brightness(50%);  
+		}
+		div:nth-child(4) img {
+			-webkit-filter: contrast(200%);  
+		}
+		div:nth-child(5) img {
+			-webkit-filter: blur(10px);  
+		}
+
+		/*Hover*/
+		div:nth-child(1) img:hover {
+			 -webkit-filter: grayscale(0%);
+		}
+		div:nth-child(2) img:hover {
+			-webkit-filter: sepia(0%);  
+		}
+		div:nth-child(3) img:hover {
+			-webkit-filter: brightness(0%);  
+		}
+		div:nth-child(4) img:hover {
+			-webkit-filter: contrast(100%);  
+		}
+	</style>
+</head>
+<body>
+<div>
+<h3>grayscale</h3>
+<img src="7611012764_66c7f7d283.jpg">
+<em><strong>Photo by:</strong> <a href="http://www.flickr.com/photos/32189415@N00/7611012764/">Mehdi Kh</a>
+</em>
+<h4>Codes</h4>
+<pre>
+img {
+	-webkit-filter: grayscale(100%);
+}
+</pre>
+</div>
+<div>
+<h3>Sepia</h3>
+<img src="7611012764_66c7f7d283.jpg">
+<em><strong>Photo by:</strong> <a href="http://www.flickr.com/photos/32189415@N00/7611012764/">Mehdi Kh</a>
+</em>
+<h4>Codes</h4>
+<pre>
+img {
+	-webkit-filter: sepia(100%);
+}
+</div>
+<div>
+<h3>Brightness</h3>
+<img src="7611012764_66c7f7d283.jpg">	
+<em><strong>Photo by:</strong> <a href="http://www.flickr.com/photos/32189415@N00/7611012764/">Mehdi Kh</a>
+</em>
+<h4>Codes</h4>
+<pre>
+img {
+	-webkit-filter: brightness(50%);
+}
+</pre>
+</div>
+<div>
+<h3>Contrast</h3>
+<img src="7611012764_66c7f7d283.jpg">
+<em><strong>Photo by:</strong> <a href="http://www.flickr.com/photos/32189415@N00/7611012764/">Mehdi Kh</a>
+</em>
+<h4>Codes</h4>
+<pre>
+img {
+	-webkit-filter: contrast(200%);
+}
+</pre>	
+</div>
+<div>
+<h3>Gaussian Blur</h3>
+<img src="7611012764_66c7f7d283.jpg">
+<em><strong>Photo by:</strong> <a href="http://www.flickr.com/photos/32189415@N00/7611012764/">Mehdi Kh</a>
+</em>
+<h4>Codes</h4>
+<pre>
+img {
+	-webkit-filter: blur(10px);
+}
+</pre>	
+</div>
+</body>
+</html>

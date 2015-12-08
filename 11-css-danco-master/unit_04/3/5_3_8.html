@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Наследование в CSS 
+	</title>
+	<style type="text/css">
+	* {margin: 0; padding: 0;}
+	body {
+    	font: 14px 'Verdana';
+    	color: green;
+	}
+
+	.center-text {
+    width: 80%;
+    height: auto;
+    font-size: 1.4em;
+    text-align: left;
+    background-color: #fafafa;
+    border: solid 1px lightgray;
+	}
+div>p {color: red;} /* только первый уровень вложенности */
+div p {color: blue;} /* абсолютно все параграфы внутри div */
+
+	</style>
+</head>
+
+<div class="center-text">
+
+<h2>Универсальный селектор</h2>
+<pre>
+* {margin: 0; padding: 0;}
+body {
+    	font: 14px 'Verdana';
+    	color: green;
+	}
+div>p {color: red;} /* только первый уровень вложенности */
+div p {color: blue;} /* абсолютно все параграфы внутри div */
+
+</pre>
+
+</div> 
+
+<p>Селектор по тегу</p>
+<div>
+  <p>Прямой наследник (первый уровень)</p>
+  <span>
+    <span>
+      <p>Третий уровень</p>
+    </span>
+  </span>
+  <p>Прямой наследник (первый уровень)</p>
+  <span>
+    <p>Второй уровень</p>
+  </span>
+  <p>Прямой наследник (первый уровень)</p>
+</div>
+
+</body>
+</html>

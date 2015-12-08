@@ -1,0 +1,261 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <style>
+
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
+table {
+  border-spacing: 0.5rem;
+}
+table {
+  border-collapse: collapse;
+}
+
+
+td:nth-child(1) { background: hsl(150, 50%, 50%); }
+td:nth-child(2) { background: hsl(160, 60%, 50%); }
+td:nth-child(3) { background: hsl(170, 70%, 50%); }
+td:nth-child(4) { background: hsl(180, 80%, 50%); }
+td:nth-child(5) { background: hsl(190, 90%, 50%); }
+td:nth-child(6) { background: hsl(200, 99%, 50%); }
+
+
+#table-example-1 { 
+  border: solid thin; 
+  border-collapse: collapse; 
+}
+#table-example-1 caption { 
+  padding-bottom: 0.5em; 
+}
+#table-example-1 th, 
+#table-example-1 td { 
+  border: solid thin;
+  padding: 0.5rem 2rem;
+}
+#table-example-1 td {
+  white-space: nowrap;
+}
+#table-example-1 th { 
+  font-weight: normal; 
+}
+#table-example-1 td { 
+  border-style: none solid; 
+  vertical-align: top; 
+}
+#table-example-1 th { 
+  padding: 0.2em; 
+  vertical-align: middle; 
+  text-align: center; 
+}
+
+#table-example-1 tbody td:first-child::after { 
+  content: leader(". "); '
+}
+
+body {
+  padding: 1rem;
+}
+
+    </style>
+  </head>
+  <body>
+  	
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>ID</th>
+    <th>Favorite Color</th>
+  </tr>
+  <tr>
+    <td>Jim</td>
+    <td>00001</td>
+    <td>Blue</td>
+  </tr>
+  <tr>
+    <td>Sue</td>
+    <td>00002</td>
+    <td>Red</td>
+  </tr>
+  <tr>
+    <td>Barb</td>
+    <td>00003</td>
+    <td>Green</td>
+  </tr>
+</table>
+
+<h1>Head and Body</h1>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Favorite Color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jim</td>
+      <td>00001</td>
+      <td>Blue</td>
+    </tr>
+    <tr>
+      <td>Sue</td>
+      <td>00002</td>
+      <td>Red</td>
+    </tr>
+    <tr>
+      <td>Barb</td>
+      <td>00003</td>
+      <td>Green</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Foot</h2>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Favorite Color</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Favorite Color</th>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Jim</td>
+      <td>00001</td>
+      <td>Blue</td>
+    </tr>
+    <tr>
+      <td>Sue</td>
+      <td>00002</td>
+      <td>Red</td>
+    </tr>
+    <tr>
+      <td>Barb</td>
+      <td>00003</td>
+      <td>Green</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Basic Styling</h2>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Favorite Color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jim</td>
+      <td>00001</td>
+      <td>Blue</td>
+    </tr>
+    <tr>
+      <td>Sue</td>
+      <td>00002</td>
+      <td>Red</td>
+    </tr>
+    <tr>
+      <td>Barb</td>
+      <td>00003</td>
+      <td>Green</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table>
+  <tr>
+    <td>This</td>
+    <td>Little</td>
+    <td>Piggy</td>
+    <td>Went</td>
+    <td>To</td>
+    <td>Market</td>
+  </tr>
+  <tr>
+    <td colspan="2">This</td>
+    <td>Little</td>
+    <td>Piggy</td>
+    <td>Went</td>
+    <td>To</td>
+  </tr>
+    <tr>
+    <td colspan="4">This</td>
+    <td rowspan="3">Little</td>
+    <td>Piggy</td>
+  </tr>
+  <tr>
+    <td rowspan="2">This</td>
+    <td>Little</td>
+    <td>Piggy</td>
+    <td>Went</td>
+    <td>To</td>
+  </tr>
+  <tr>
+    <td>Little</td>
+    <td>Piggy</td>
+    <td>Went</td>
+    <td>To</td>
+  </tr>
+</table>
+
+
+<table id="table-example-1"><caption>Specification values: <b>Steel</b>, <b>Castings</b>,
+   Ann. A.S.T.M. A27-16, Class B;* P max. 0.06; S max. 0.05.</caption>
+   <thead><tr><th rowspan="2">Grade.</th>
+     <th rowspan="2">Yield Point.</th>
+     <th colspan="2">Ultimate tensile strength</th>
+     <th rowspan="2">Per cent elong. 50.8&nbsp;mm or&nbsp;2&nbsp;in.</th>
+     <th rowspan="2">Per cent reduct. area.</th>
+    </tr><tr><th>kg/mm<sup>2</sup></th>
+     <th>lb/in<sup>2</sup></th>
+    </tr></thead><tbody><tr><td>Hard</td>
+     <td>0.45 ultimate</td>
+     <td>56.2</td>
+     <td>80,000</td>
+     <td>15</td>
+     <td>20</td>
+    </tr><tr><td>Medium</td>
+     <td>0.45 ultimate</td>
+     <td>49.2</td>
+     <td>70,000</td>
+     <td>18</td>
+     <td>25</td>
+    </tr><tr><td>Soft</td>
+     <td>0.45 ultimate</td>
+     <td>42.2</td>
+     <td>60,000</td>
+     <td>22</td>
+     <td>30</td>
+    </tr></tbody></table>
+
+
+
+
+  </body>
+</html>

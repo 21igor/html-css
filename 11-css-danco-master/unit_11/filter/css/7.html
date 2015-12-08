@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<style>
+h2.myclass {
+	color:blue;
+}
+h2.myclass~p {
+	color:red;
+}
+
+h2.myclass~p[class='green'] {
+	color:green;
+}
+
+</style>
+
+<section>
+<h2 class='myclass'>MyClass</h2>
+<p>Color Red</p>
+<p class='green'>Color Green</p>
+</section>
+</html>

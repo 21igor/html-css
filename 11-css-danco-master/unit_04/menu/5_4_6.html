@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Создаем раскрывающееся меню для сайта
+	</title>
+	<style type="text/css">
+	body {
+    	font: 14px 'Verdana';
+    	margin: 0;
+    	padding: 0;
+	}
+	.center-text {
+    width: 80%;
+    height: auto;
+    font-size: 1.4em;
+    text-align: left;
+    background-color: #fafafa;
+    border: solid 1px lightgray;
+	}
+	ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	}
+
+	ul.menu > li {
+    float: left;
+    position: relative;
+	}
+	ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+	}
+	ul.menu > li > a:hover {
+    background-color: black;
+	}
+	ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border: 1px solid red;
+	}
+	</style>
+</head>
+<ul class="menu">
+    <li><a href=#>Menu 1</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 1</a></li>
+            <li><a href=#>Sudmenu 1</a></li>
+            <li><a href=#>Sudmenu 1</a></li>
+        </ul>
+    </li>
+    <li><a href=#>Menu 2</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 2</a></li>
+            <li><a href=#>Sudmenu 2</a></li>
+            <li><a href=#>Sudmenu 2</a></li>
+        </ul>
+    </li>
+    <li><a href=#>Menu 3</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 3</a></li>
+            <li><a href=#>Sudmenu 3</a></li>
+            <li><a href=#>Sudmenu 3</a></li>
+        </ul>
+    </li>
+    <li><a href=#>Menu 4</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 4</a></li>
+            <li><a href=#>Sudmenu 4</a></li>
+            <li><a href=#>Sudmenu 4</a></li>
+        </ul>
+    </li>
+    <li><a href=#>Menu 5</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 5</a></li>
+            <li><a href=#>Sudmenu 5</a></li>
+            <li><a href=#>Sudmenu 5</a></li>
+        </ul>
+    </li>
+</ul>
+<div class="center-text">
+
+<h2>Создаем раскрывающееся меню для сайта</h2>
+<pre>
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: black;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border: 1px solid red;
+}
+</pre>
+
+</div> 
+
+</body>
+</html>

@@ -1,0 +1,487 @@
+@CHARSET "utf-8";
+body {
+  
+  font-size: 15px;
+  line-height: 20px;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #b3b9bf;
+  background: #f9f9f9;
+}
+h1 {
+  margin: 10px 0px;
+  color: white;
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h3 {
+  margin: 10px 0px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 5px;
+  color: #d6d6d6;
+  text-align: left;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin-top: 0px;
+}
+.menu-li {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+.menu-li:hover {
+  border-top-style: none;
+  background-color: #2fde8f;
+  color: white;
+  font-weight: 700;
+}
+
+.about-box {
+  padding-top: 15px;
+  background-color: #323A45;
+}
+.about-box-back {
+  background-color: transparent;
+}
+
+.separator {
+  display: block;
+  width: 100%;
+  height: 0px;
+  margin: 0px auto 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-bottom: 4px double rgba(0, 0, 0, 0.23);
+  box-shadow: none;
+  color: #333;
+}
+
+.about-text {
+  display: block;
+  margin: 20px auto;
+  padding-left: 0px;
+  color: white;
+  text-align: center;
+}
+.about-heading {
+  color: white;
+}
+.about-des {
+  color: white;
+  text-align: center;
+}
+.about-img {
+  display: block;
+  margin: 50px auto 35px;
+  text-align: center;
+}
+
+.wrap {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px 10px;
+  border-bottom: 0px none black;
+  color: #333;
+  }
+
+.exp {
+  background-color: transparent;
+ /* background-image: url('../images/bg.png'); */
+  background-position: 0% 0%;
+  background-size: 125px;
+  background-repeat: repeat;
+  background-attachment: scroll;
+}
+
+ .exp-des {
+  display: block;
+  margin: 30px 10px;
+  padding: 10px 5px;
+}
+
+.exp-back {
+  padding-top: 15px;
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(rgba(179, 105, 149, 0.70), #b36995);
+  background-image: -o-linear-gradient(rgba(179, 105, 149, 0.70), #b36995);
+  background-image: linear-gradient(rgba(179, 105, 149, 0.70), #b36995);
+}
+
+.exp-box-h3 {
+  font-size: 65px;
+  font-weight: 100;
+  margin-bottom: 40px;
+  margin-top: 25px;
+  color: #FFF;
+  border-bottom: 4px double rgba(255, 255, 255, 0.53);
+  padding-bottom: 45px;
+}
+
+.btn-ex-one {
+  margin-top: 30px;
+  float: left;
+}
+
+.ex-btn {
+  color: #FFF;
+  font-weight: 100;
+  padding: 15px;
+  border: 1px solid #FFF;
+  border-radius: 4px;
+
+  font-size: 25px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.ex-btn:hover {
+  background: #323A45;
+  color: #FFF;
+  border: 1px solid #323A45;
+}
+
+
+.ex-btn-two:hover {
+  color: #FFF;
+  border: 1px solid #FFF;
+  background: rgba(0, 0, 0, 0);
+}
+
+.ex-btn-two {
+  color: #FFF;
+  background: #223C4B;
+  padding: 10px;
+  border: 1px solid #223C4B;
+  border-radius: 4px ;
+  font-weight: 100;
+  font-size: 35px;
+}
+
+.btn-ex-two {
+  float: left;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.call-to-action {
+  background-color: #303030;
+  background-image: none;
+  background-position: 0% 0%;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+}
+.call-row {
+  padding: 20px 15px;
+  border: 1px solid #ccc;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: transparent;
+}
+.call-to-h3 {
+  background-color: transparent;
+  color: #eee;
+  text-align: left;
+  text-decoration: none;
+}
+.call-to-butn {
+  display: block;
+  width: 60%;
+  margin: 25px auto 0px;
+  padding: 9px;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  color: #eee;
+  text-decoration: none;
+  text-align: center;
+}
+.call-to-butn:hover {
+  background-color: #ed5565;
+  border: 1px solid #ed5565;
+}
+.cal-col-1 {
+  border-right: 1px solid white;
+}
+
+
+.service-combo {
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: transparent;
+}
+.service-h1 {
+  padding-bottom: 12px;
+  border-bottom: 2px solid #474747;
+}
+.service-button {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  background-image: -webkit-linear-gradient(#13ad7d, #13ad7d);
+  background-image: -o-linear-gradient(#13ad7d, #13ad7d);
+  background-image: linear-gradient(#13ad7d, #13ad7d);
+  box-shadow: none;
+  text-align: center;
+}
+.services-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.service-parlex {
+  padding-top: 0px;
+  background-image: url('../images/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.service-back {
+  padding-top: 15px;
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(#800b36, rgba(128, 11, 54, 0.50) 56%);
+  background-image: -o-linear-gradient(#800b36, rgba(128, 11, 54, 0.50) 56%);
+  background-image: linear-gradient(#800b36, rgba(128, 11, 54, 0.50) 56%);
+}
+
+
+.separator.service {
+  border-bottom-color: white;
+  box-shadow: none;
+}
+
+.service-heading {
+  color: white;
+}
+
+
+.service-icon {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.service-head {
+  color: white;
+}
+
+
+.process-back {
+  padding-top: 15px;
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(#0ac791, #00c788);
+  background-image: -o-linear-gradient(#0ac791, #00c788);
+  background-image: linear-gradient(#0ac791, #00c788);
+}
+
+.process-text {
+  display: block;
+  margin: 20px auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: white;
+  text-align: center;
+}
+.process-paragraph {
+  color: white;
+  text-align: center;
+}
+.our-process-heading {
+  color: white;
+}
+
+.our-process-sys {
+  color: white;
+}
+
+/*----------- efonts ------------------*/
+
+@font-face {
+  font-family: 'ecoicon';
+  src:url('../fonts/ecoicons/ecoicon.eot');
+  src:url('../fonts/ecoicons/ecoicon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ecoicons/ecoicon.woff') format('woff'),
+    url('../fonts/ecoicons/ecoicon.ttf') format('truetype'),
+    url('../fonts/ecoicons/ecoicon.svg#ecoicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hi-icon-wrap {
+  text-align: center;
+  margin: 0 auto;
+  padding: 2em 0 1em;
+}
+
+.hi-icon {
+  display: inline-block;
+  font-size: 0px;
+  cursor: pointer;
+  margin: 15px 30px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.hi-icon:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  -webkit-box-sizing: content-box; 
+  -moz-box-sizing: content-box; 
+  box-sizing: content-box;
+}
+
+.hi-icon:before {
+  font-family: 'ecoicon';
+  speak: none;
+  font-size: 48px;
+  line-height: 90px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hi-icon-mobile:before {
+  content: "\e009";
+}
+
+.hi-icon-screen:before {
+  content: "\e00a";
+}
+
+.hi-icon-earth:before {
+  content: "\e002";
+}
+
+.hi-icon-support:before {
+  content: "\e000";
+}
+
+.hi-icon-locked:before {
+  content: "\e001";
+}
+
+.hi-icon-cog:before {
+  content: "\e003";
+}
+
+.hi-icon-clock:before {
+  content: "\e004";
+}
+
+.hi-icon-videos:before {
+  content: "\e005";
+}
+
+.hi-icon-list:before {
+  content: "\e006";
+}
+
+.hi-icon-refresh:before {
+  content: "\e007";
+}
+
+.hi-icon-images:before {
+  content: "\e008";
+}
+
+.hi-icon-pencil:before {
+  content: "\e00b";
+}
+
+.hi-icon-link:before {
+  content: "\e00c";
+}
+
+.hi-icon-mail:before {
+  content: "\e00d";
+}
+
+.hi-icon-location:before {
+  content: "\e00e";
+}
+
+.hi-icon-archive:before {
+  content: "\e00f";
+}
+
+.hi-icon-chat:before {
+  content: "\e010";
+}
+
+.hi-icon-bookmark:before {
+  content: "\e011";
+}
+
+.hi-icon-user:before {
+  content: "\e012";
+}
+
+.hi-icon-contract:before {
+  content: "\e013";
+}
+
+.hi-icon-star:before {
+  content: "\e014";
+}
+
+/* Effect 5 */
+.hi-icon-effect-5 .hi-icon {
+  box-shadow: 0 0 0 4px rgba(255,255,255,1);
+  overflow: hidden;
+  -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  -moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.hi-icon-effect-5 .hi-icon:after {
+  display: none;
+}
+
+.no-touch .hi-icon-effect-5 .hi-icon:hover {
+  background: rgba(255,255,255,1);
+  color: #3DE6BA;
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.3);
+}
+

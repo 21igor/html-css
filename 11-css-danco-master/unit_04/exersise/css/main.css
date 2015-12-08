@@ -1,0 +1,126 @@
+/* main styles */
+body {
+    background: #E4E4E4 url("../images/bg.png");
+    color: #292929;
+    color: rgba(0, 0, 0, 0.82);
+    font: normal 100% Cambria, Georgia, serif;
+    -moz-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    -webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    -webkit-text-size-adjust: none;
+}
+
+a {
+    color: #890101;
+    text-decoration: none;
+    -moz-transition: 0.2s color linear;
+    -webkit-transition: 0.2s color linear;
+    transition: 0.2s color linear;
+}
+
+#page {
+    background: url("../images/rag.png") repeat-x;
+    padding: 2em 0;
+}
+
+.inner {
+    margin: 0 auto;
+    width: 93.75%;      /* 960px / 1024px */
+}
+
+aside {
+    float: left;
+    width: 31.875%; /* 306px / 960px */
+}
+
+h1 a {
+    padding-top: 117px;
+    height: 162px;
+    display: block;
+    text-align: center;
+}
+
+section,
+footer {
+    float: right;
+    width: 65.9375%;    /* 633px / 960px */
+}
+
+.intro h2 {
+    font: normal 2em "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+    text-align: center;
+    margin-bottom: 0.25em;
+}
+
+.intro {
+    margin-top: 117px;
+}
+.intro div {
+    line-height: 1.4;
+}
+
+article h3 {
+    font: normal 2em "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+    text-align: center;
+    margin-bottom: 0.25em;
+}
+
+section h2 {
+    background: url("../images/ornament.png") no-repeat 0 50%;
+    font-size: 1.4em;
+    text-transform: lowercase;
+    text-align: center;
+    margin: 0.75em 0 1em;
+}
+section h2 b {
+    background: url("../images/bg.png");
+    font-weight: normal;
+    padding: 0 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    float: left;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    margin: 0 3.317535545023696682% 1.5em 0;            /* 21px / 633px */
+    text-align: center;
+    text-transform: uppercase;
+    width: 30.0157978%;     /*  190px / 633px */
+}
+
+figure b {
+    display: block;
+    font-size: 14px;
+    font-family: "Book Antiqua", "Palatino Linotype", Georgia, serif;
+    letter-spacing: 0.1em;
+}
+
+figure img {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 0 auto 0.5em;
+}
+
+
+
+/* footer */
+footer {
+    background: url("../images/ornament.png") 50% 0 repeat-x;
+    font-size: 12px;
+    text-align: center;
+    padding: 40px 0 20px;
+}
+footer p {
+    margin-bottom: 0.5em;
+}
+

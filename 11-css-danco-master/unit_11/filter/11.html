@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<style>
+body{
+  background: #D5D5D5;
+  font-family: museo-300;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.tri, .flecha {display: inline-block;margin: 15px;}
+.tri {
+text-align: left;
+width: 250px;
+height: 100px;
+background: #fff;
+position: relative;
+padding: 15px;
+box-sizing: border-box;
+}
+.tri:after {
+content:'';
+height: 0;
+width: 0;
+border-width: 20px 20px 20px 0;
+border-style: solid;
+border-color: rgba(255,255,255,0) rgba(255,255,255,1) rgba(255,255,255,0) rgba(255,255,255,0);
+position: absolute;
+top: 15px;
+left: -20px;
+}
+.flecha {
+  position: relative;
+  margin: -20px 110px 0;
+  width: 0;
+  height: 0;
+  border-top: 90px solid transparent;
+  border-right: 90px solid #FFC000;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+.flecha:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 30px solid #FFC000;
+  border-radius: 200px 0 0 0;
+  top: -119px;
+  left: -98px;
+  width: 120px;
+  height: 120px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.drop-shadow {
+        filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5));
+        }
+.box-shadow {box-shadow: 0px 0px 10px rgba(0,0,0,.5)}
+</style>
+<section>
+<div class="tri drop-shadow">filter: drop-shadow</div>
+<div class="tri box-shadow">box-shadow</div>
+<div style="clear:both"></div>
+<div class="flecha drop-shadow"></div>
+<div class="flecha box-shadow"></div>
+</section>
+</html>

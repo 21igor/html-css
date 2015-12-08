@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+  <style>
+  
+  rowgroup, tbody { 
+    border: solid medium; }
+  td { 
+    border: solid thin; 
+    height: 1.4em; 
+    width: 1.4em; 
+    text-align: center; 
+    padding: 0; }
+ </style>
+  </head>
+  <body>
+ 
+<table>
+  <caption>Measurement of legs and tails in Cats and English speakers</caption>
+
+ <thead>
+  <tr> 
+    <th> ID </th>
+    <th> Measurement</th> 
+    <th> Average</th> 
+    <th> Maximum</th>
+  </tr>
+ </thead>
+
+
+ <tbody>
+  <tr> 
+  <td> </td>
+  <th scope=rowgroup> Cats </th>
+  <td> </td>
+  <td></td>
+  <tr> </tr>
+  <td> 93 </td>
+  <th scope=row> Legs </th>
+  <td> 3.5 </td>
+  <td> 4</td>
+  <tr> </tr>
+  <td> 10 </td>
+  <th scope=row> Tails </th>
+  <td> 1 </td>
+  <td> 1</td>
+  </tr>
+ </tbody>
+ <tbody>
+  <tr> 
+  <td> </td>
+  <th scope=rowgroup> English speakers </th>
+  <td> </td>
+  <td></td>
+  </tr>
+  <tr> 
+  <td> 32 </td>
+  <th scope=row> Legs </th>
+  <td> 2.67 </td>
+  <td> 4</td>
+  <tr> </tr>
+  <td> 35 </td>
+  <th scope=row> Tails </th>
+  <td> 0.33 </td>
+  <td> 1</td>
+  </tr>
+ </tbody>
+  </table>
+  </body>
+</html>
